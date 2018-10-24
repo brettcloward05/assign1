@@ -19,9 +19,11 @@ def valid_input(userpin):
         return True
     elif len(userpin) != 4:
         print("Invalid PIN length. Correct format is: <9876>")
+        print("Your PIN is incorrect")
         return False
     elif userpin.isdigit() is False:
         print("Invalid PIN character. Correct format is: <9876>")
+        print("Your PIN is incorrect")
         return False
     elif userpin != pin:
         print("Your PIN is incorrect")
